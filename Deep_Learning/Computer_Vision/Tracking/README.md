@@ -70,7 +70,11 @@ drive.mount('/content/drive')
 ## 📌 Key Use Cases
 
 ✔️ Smart surveillance systems
+
 ✔️ Multi-camera monitoring
+
 ✔️ Robotics with camera navigation
+
 ✔️ Edge AI-based live tracking
+
 ✔️ Sports analytics & motion prediction
