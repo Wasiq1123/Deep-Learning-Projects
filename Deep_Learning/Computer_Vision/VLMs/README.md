@@ -56,8 +56,6 @@ pip install torch torchvision transformers qwen-vl-utils matplotlib opencv-pytho
 
 For Qwen2.5-VL (if using Colab):
 
-```bash
 !pip install qwen-vl-utils
 from huggingface_hub import login
 login(token="your_huggingface_token")
-```bash
