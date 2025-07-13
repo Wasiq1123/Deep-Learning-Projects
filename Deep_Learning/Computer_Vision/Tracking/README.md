@@ -14,11 +14,8 @@ This repository showcases various real-time object tracking implementations usin
 ```
 📁 Tracking
 ├── Multi Tracking of Objects.ipynb            # 🔥 Multi-threaded tracker on 2+ video streams
-
 ├── Yolov8 tracking.ipynb                      # YOLOv8 video tracking (with flip & resize)
-
 ├── SORTTracker and YOLO11.py                  # Webcam-based real-time tracking using SORT
-
 ├── .gitkeep
 ```
 
@@ -28,7 +25,7 @@ This repository showcases various real-time object tracking implementations usin
 
 ### ⚔️ Multi-Tracking (⭐ Highlight Feature)
 
-* **Track multiple videos simultaneously** using Python's `threading` module
+**Track multiple videos simultaneously** using **Python's `threading` module
 * Each video stream runs a separate YOLOv8 model for detection + `.track()`
 * Great for **security systems**, **multi-camera robotics**, or **surveillance control centers**
 * Easily extendable to handle different model types (segmentation/detection)
