@@ -11,7 +11,7 @@ This folder contains a set of experiments to compare image classification perfor
 ## 📌 Project Highlights
 
 ### ✅ 1. Vision Transformer (ViT)
-- 📦 Pretrained Model: `google/vit-base-patch16-224`
+- 📦 Pretrained Model: [`google/vit-base-patch16-224`](https://huggingface.co/google/vit-base-patch16-224)
 - 📷 Task: Predict image class from a single input image
 - 🛠️ Framework: PyTorch + HuggingFace
 - 🧠 Feature Extractor and Inference via `ViTFeatureExtractor` and `ViTForImageClassification`
@@ -28,8 +28,8 @@ This folder contains a set of experiments to compare image classification perfor
   - Inference Time
   - Number of Parameters
   - Top-1 Prediction and Confidence Score
-- 🧪 ResNet50 used `tf.keras.applications.resnet50`
-- 🧪 VGG16 used `tf.keras.applications.vgg16`
+- 🧪 ResNet50: [`tf.keras.applications.ResNet50`](https://www.tensorflow.org/api_docs/python/tf/keras/applications/ResNet50)
+- 🧪 VGG16: [`tf.keras.applications.VGG16`](https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16)
 
 ➡️ **Notebook**: `Tf Resnet and VGG image classification comparison.ipynb`
 
@@ -48,12 +48,12 @@ This folder contains a set of experiments to compare image classification perfor
 
 ## 📊 Comparative Results
 
-| Model      | Inference Time (s) | Parameters      | Dataset       | Accuracy / Prediction |
-|------------|--------------------|------------------|---------------|------------------------|
-| ViT        | Fast               | ~85M             | Custom        | Top-1 label from HuggingFace |
-| ResNet50   | Fast               | ~25.6M           | Custom Image  | Crocodile 🐊 |
-| VGG16      | Slower             | ~138M            | Custom Image  | Alligator 🐊 |
-| CNN (MNIST)| Fast               | ~1.1M            | MNIST         | ~99% test accuracy     |
+| Model      | Inference Time (s) | Parameters      | Dataset       | Accuracy / Prediction         |
+|------------|--------------------|------------------|---------------|-------------------------------|
+| ViT        | Fast (~0.61s)      | ~85M             | Custom Image  | Top-1 label (e.g., Tabby Cat) |
+| ResNet50   | Fast (~0.36s)      | ~25.6M           | Custom Image  | Crocodile 🐊                   |
+| VGG16      | Slower (~0.49s)    | ~138M            | Custom Image  | Alligator 🐊                   |
+| CNN (MNIST)| Very Fast          | ~1.1M            | MNIST         | ~99% test accuracy            |
 
 ---
 
