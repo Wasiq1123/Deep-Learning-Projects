@@ -1,61 +1,99 @@
 # 🧠 Vision-Language Models (VLMs) with CLIP and Qwen2.5-VL
 
-This repository showcases multiple Vision-Language Model implementations using state-of-the-art architectures like **CLIP** and **Qwen2.5-VL** for tasks such as image captioning, object grounding, and token-level embedding analysis.
+This repository showcases powerful **Vision-Language Models** combining image and text understanding, featuring **CLIP** and **Qwen2.5-VL** for tasks such as image captioning, object grounding, and semantic similarity.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-Vision_Language_Models/
+📁 `Vision_Language_Models`
 
+```
 ├── .gitkeep
-
 ├── CLIP Tokenization.ipynb
-
 ├── Owen2.5 Zero Shot Object Detection.ipynb
-
 ├── Owen 2.5 VLMs Image Captioning.ipynb
+```
 
 ---
 
 ## 🔍 Implementations Overview
 
-### ⚡ `CLIP Tokenization.ipynb`
-- **Model**: `openai/clip-vit-base-patch32`
-- **Task**: Compute cosine similarity between text and image embeddings.
-- **Features**:
-  - Tokenizes and embeds image and text inputs.
-  - Calculates pairwise similarities between all pairs (text-text, image-image).
-  - Useful for analyzing multi-class similarity and semantic alignment.
+### ⚡ CLIP Tokenization & Embedding
 
-### ⚡ `Owen 2.5 VLMs Image Captioning.ipynb`
-- **Model**: `Qwen/Qwen2.5-VL-3B-Instruct`
-- **Task**: Zero-shot image captioning
-- **Features**:
-  - Prompts are passed in a multimodal chat template (text + image).
-  - Automatically generates detailed natural-language captions.
-  - Built with Hugging Face + `qwen-vl-utils`.
+**Notebook**: `CLIP Tokenization.ipynb`
+**Model**: `openai/clip-vit-base-patch32`
 
-### ⚡ `Owen2.5 Zero Shot Object Detection.ipynb`
-- **Model**: Same as above
-- **Task**: Zero-shot object grounding and localization
-- **Features**:
-  - Outputs object label + bounding boxes from just image and prompt.
-  - Supports JSON-style outputs for integration into downstream systems.
-  - Powerful for tasks where no retraining is needed.
+📌 **Highlights**:
+
+* Tokenizes both images and text to generate embeddings
+* Computes **cosine similarity** for image-image and text-text pairs
+* Explores cross-modal relationships using `torch.nn.functional.cosine_similarity`
+* Ideal for **zero-shot classification**, **semantic alignment**, and **embedding analysis**
 
 ---
 
-## 🔧 Installation
+### ⚡ Qwen2.5-VL Image Captioning
 
-Install the dependencies with:
+**Notebook**: `Owen 2.5 VLMs Image Captioning.ipynb`
+**Model**: `Qwen/Qwen2.5-VL-3B-Instruct`
+
+📌 **Highlights**:
+
+* Accepts **multimodal prompts**: (Image + Text)
+* Generates **zero-shot image captions** in natural language
+* Uses HuggingFace Transformers + `qwen-vl-utils`
+* Easy-to-use template-based chat formatting
+
+---
+
+### ⚡ Qwen2.5-VL Zero-Shot Object Detection
+
+**Notebook**: `Owen2.5 Zero Shot Object Detection.ipynb`
+**Model**: `Qwen/Qwen2.5-VL-3B-Instruct`
+
+📌 **Highlights**:
+
+* Performs **object grounding** using only visual input + descriptive prompt
+* Outputs **JSON with bounding boxes** and **semantic labels**
+* Perfect for **zero-shot localization** in unseen scenarios
+* No training/fine-tuning required
+
+---
+
+## 🧪 Requirements
+
+Install dependencies using pip:
 
 ```bash
 pip install torch torchvision transformers qwen-vl-utils matplotlib opencv-python
+```
 
+If you're using **Google Colab** with Hugging Face models:
 
-For Qwen2.5-VL (if using Colab):
-
+```python
 !pip install qwen-vl-utils
+
 from huggingface_hub import login
 login(token="your_huggingface_token")
+```
+
+---
+
+## 💡 Applications
+
+✔️ Zero-shot **image captioning**
+✔️ **Visual grounding** without retraining
+✔️ **Vision-language alignment** for embedding analysis
+✔️ Integration into **multimodal AI agents**, smart search, or chat-based systems
+
+---
+
+## 🔗 References
+
+* [OpenAI CLIP Paper](https://arxiv.org/abs/2103.00020)
+* [CLIP on Hugging Face](https://huggingface.co/openai/clip-vit-base-patch32)
+* [Qwen2.5-VL Hugging Face Page](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct)
+* [qwen-vl-utils GitHub](https://github.com/QwenLM/Qwen-VL)
+
+---
