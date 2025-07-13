@@ -12,6 +12,7 @@ This repository contains multiple object detection implementations using state-o
 ## 📂 Project Structure
 
 📁 Object_Detection
+
 ├── DETR_Object_Detection.ipynb
 
 ├── FasterRCNN_Object_Detection.ipynb
