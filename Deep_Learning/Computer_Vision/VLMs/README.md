@@ -83,8 +83,11 @@ login(token="your_huggingface_token")
 ## 💡 Applications
 
 ✔️ Zero-shot **image captioning**
+
 ✔️ **Visual grounding** without retraining
+
 ✔️ **Vision-language alignment** for embedding analysis
+
 ✔️ Integration into **multimodal AI agents**, smart search, or chat-based systems
 
 ---
