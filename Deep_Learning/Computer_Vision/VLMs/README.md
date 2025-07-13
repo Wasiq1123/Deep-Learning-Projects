@@ -8,8 +8,11 @@ This repository showcases multiple Vision-Language Model implementations using s
 
 Vision_Language_Models/
 ├── .gitkeep
+
 ├── CLIP Tokenization.ipynb
+
 ├── Owen2.5 Zero Shot Object Detection.ipynb
+
 ├── Owen 2.5 VLMs Image Captioning.ipynb
 
 ---
