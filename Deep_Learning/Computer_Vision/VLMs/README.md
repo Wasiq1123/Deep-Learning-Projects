@@ -7,6 +7,7 @@ This repository showcases multiple Vision-Language Model implementations using s
 ## 📁 Project Structure
 
 Vision_Language_Models/
+
 ├── .gitkeep
 
 ├── CLIP Tokenization.ipynb
