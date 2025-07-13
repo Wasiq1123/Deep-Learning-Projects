@@ -88,7 +88,3 @@ drive.mount('/content/drive')
 
 !pip install ultralytics
 ```
-
----
-
-Let me know if you also want a Markdown version or GitHub upload-ready format!
