@@ -51,8 +51,8 @@ This folder contains a set of experiments to compare image classification perfor
 | Model      | Inference Time (s) | Parameters      | Dataset       | Accuracy / Prediction |
 |------------|--------------------|------------------|---------------|------------------------|
 | ViT        | Fast               | ~85M             | Custom        | Top-1 label from HuggingFace |
-| ResNet50   | Fast               | ~25.6M           | Custom Image  | Crocodile 🐊 or similar |
-| VGG16      | Slower             | ~138M            | Custom Image  | Alligator 🐊 or similar |
+| ResNet50   | Fast               | ~25.6M           | Custom Image  | Crocodile 🐊 |
+| VGG16      | Slower             | ~138M            | Custom Image  | Alligator 🐊 |
 | CNN (MNIST)| Fast               | ~1.1M            | MNIST         | ~99% test accuracy     |
 
 ---
