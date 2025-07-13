@@ -13,8 +13,11 @@ This repository contains multiple object detection implementations using state-o
 
 📁 Object_Detection
 ├── DETR_Object_Detection.ipynb
+
 ├── FasterRCNN_Object_Detection.ipynb
+
 ├── Qwen2.5_VL_Object_Detection.ipynb
+
 ├── YOLOv8_Video_Object_Detection.ipynb
 
 
