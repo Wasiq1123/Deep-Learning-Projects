@@ -1,12 +1,12 @@
 # 🧠 Image Segmentation with Transformers, CNNs, and Vision-Language Models
 
-This repository contains multiple **image and video segmentation** implementations using state-of-the-art models in computer vision:
+This repository contains multiple image and video segmentation implementations using state-of-the-art models in computer vision:
 
-* DeepLabV3 (CNN)
-* FCN-ResNet101 (CNN)
-* YOLO11-Segmentation (Ultralytics)
-* SAM2 (Segment Anything Model)
-* FastSAM (Lightweight SAM variant)
+* [**DeepLabV3 (CNN Semantic Segmentation)**](https://pytorch.org/vision/stable/models/generated/torchvision.models.segmentation.deeplabv3_resnet101.html)
+* [**FCN-ResNet101 (Fully Convolutional Network)**](https://pytorch.org/vision/stable/models/generated/torchvision.models.segmentation.fcn_resnet101.html)
+* [**YOLOv11-Seg (Real-Time Segmentation)**](https://github.com/ultralytics/ultralytics)
+* [**SAM2 (Segment Anything Model v2)**](https://segment-anything.com/)
+* [**FastSAM (Lightweight SAM by Ultralytics)**](https://github.com/ultralytics/ultralytics)
 
 ---
 
@@ -16,15 +16,10 @@ This repository contains multiple **image and video segmentation** implementatio
 📁 Image_Segmentation
 
 ├── YOLO11_Image_Segmentation.ipynb
-
 ├── YOLO11_Segmentation_in_Video.ipynb
-
 ├── SAM2_Segmentation_in_Video.ipynb
-
 ├── FAST-SAM.ipynb
-
 ├── Deeplabv3_resnet101_Segmentation_in_Video.ipynb
-
 ├── Pytorch_Image_Segmentation.ipynb
 ```
 
@@ -32,52 +27,48 @@ This repository contains multiple **image and video segmentation** implementatio
 
 ## 🔍 Implementations Overview
 
-### ⚡ YOLO11 Segmentation (Real-Time)
+### ⚡ [YOLOv11 Segmentation (Real-Time)](https://github.com/ultralytics/ultralytics)
 
-* Based on Ultralytics YOLOv11 segmentation variant (`yolo11n-seg.pt`)
-* Runs on images and videos
-* Ultra-fast predictions and annotated output via `.plot()`
-* Video support using `cv2.VideoCapture()`
-* Confidence threshold: *auto-handled*
-
----
-
-### ⚡ SAM2 (Segment Anything Model v2)
-
-* Vision-Language segmentation by Meta AI
-* High-accuracy, zero-shot segmentation
-* Loads `sam2.1_b.pt` and processes each video frame
-* Output is a segmentation overlay on the video
-* Flip and segment frame-by-frame in real-time
+* Based on Ultralytics YOLOv11 segmentation (`yolo11n-seg.pt`)
+* Ultra-fast video/image segmentation with `.plot()`
+* Integrated with OpenCV for frame-wise rendering
+* Video and image inference supported
 
 ---
 
-### ⚡ FastSAM
+### ⚡ [SAM2 (Segment Anything Model v2)](https://segment-anything.com/)
 
-* Lightweight alternative to SAM
-* High-speed segmentation with retina masks
-* Ideal for inference on CPU or low-power devices
-* Uses `FastSAM-s.pt` checkpoint
-* Inputs: URLs or image files
+* Powerful vision-language segmentation model by Meta AI
+* Supports zero-shot segmentation
+* Highly accurate and generalized
+* Processes each video frame individually
 
 ---
 
-### ⚡ DeepLabV3 + ResNet101
+### ⚡ [FastSAM (Ultralytics)](https://github.com/ultralytics/ultralytics)
+
+* Lightweight, fast alternative to SAM2
+* Ideal for inference on CPUs or embedded systems
+* Supports retina masks, high-resolution inputs
+* Real-time static image segmentation
+
+---
+
+### ⚡ [DeepLabV3 + ResNet101](https://pytorch.org/vision/stable/models/generated/torchvision.models.segmentation.deeplabv3_resnet101.html)
 
 * CNN-based semantic segmentation from PyTorch
-* Pretrained on COCO/Cityscapes datasets
-* Uses `DeepLabV3_ResNet101_Weights.DEFAULT`
-* Torch transforms with resizing, normalization
-* Output: pixel-wise class map + color-mapped result
+* Pretrained on COCO/Cityscapes
+* Outputs class-wise segmentation maps
+* Best for dense, pixel-level labeling tasks
 
 ---
 
-### ⚡ FCN + ResNet101
+### ⚡ [FCN-ResNet101](https://pytorch.org/vision/stable/models/generated/torchvision.models.segmentation.fcn_resnet101.html)
 
-* Fully Convolutional Network for pixel-wise labeling
-* Side-by-side comparison with DeepLabV3
-* Input: static image
-* Output: color maps for both models
+* Fully Convolutional Network for semantic segmentation
+* Often used for comparison with DeepLabV3
+* Lightweight and easy to deploy
+* Ideal for educational and experimentation purposes
 
 ---
 
@@ -100,10 +91,4 @@ drive.mount('/content/drive')
 
 ---
 
-## 📌 Notes
-
-* All notebooks are optimized for **Google Colab GPU**
-* Replace paths with your own images/videos in Google Drive
-* Supports **real-time and static image segmentation**
-
----
+Let me know if you also want a Markdown version or GitHub upload-ready format!
