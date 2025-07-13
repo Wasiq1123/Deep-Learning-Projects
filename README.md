@@ -23,7 +23,7 @@ Implemented using popular CNNs and Transformers.
 | `VGG16_Classification.ipynb` | Image classification using VGG-16 |
 | `ResNet50_Transfer_Learning.ipynb` | Fine-tuned ResNet-50 with transfer learning |
 
-📂 Folder: `classification/`
+📂 Folder: `Image_Classification/`
 
 ---
 
@@ -34,15 +34,15 @@ Both standard and transformer-based models are used.
 |-------|-------------|
 | `Faster R-CNN Object Detection.ipynb` | Two-stage object detection |
 | `Yolov8 Video Object Detection.ipynb` | Real-time video detection using YOLOv8 |
-| `DETR_Transformer.ipynb` | Object detection using DETR Transformer |
+| `Detr_Transformer.ipynb` | Object detection using DETR Transformer |
 | `Owen2.5 Zero Shot Object detection.ipynb` | Zero-shot detection using Open-Vocabulary model |
 
-📂 Folder: `object_detection/`
+📂 Folder: `Object_Detection/`
 
 ---
 
 ### 🔹 3. Image & Video Segmentation
-From classic CNNs to powerful models like SAM and YOLOv11.
+From classic CNNs to powerful models like SAM and YOLO11.
 
 | Model | Description |
 |-------|-------------|
@@ -53,7 +53,7 @@ From classic CNNs to powerful models like SAM and YOLOv11.
 | `SAM2 Segmentation in Video.ipynb` | Segmentation using Segment Anything Model (SAM2) |
 | `FAST-SAM.ipynb` | Fast interactive segmentation with FAST-SAM |
 
-📂 Folder: `segmentation/`
+📂 Folder: `Segmentation/`
 
 ---
 
@@ -66,7 +66,7 @@ Combining object detection with tracking algorithms.
 | `SORTTracker and YOLO11.py` | Tracking with SORT algorithm + YOLOv11 |
 | `Multi Tracking of Objects.ipynb` | Multi-object tracking in custom scenarios |
 
-📂 Folder: `tracking/`
+📂 Folder: `Tracking/`
 
 ---
 
@@ -79,7 +79,7 @@ Powerful models that bridge vision and language understanding.
 | `CLIP Tokenization.ipynb` | Visual-textual embedding using CLIP |
 | `Owen 2.5 VLMs Image Captioning.ipynb` | Image captioning using VLMs |
 
-📂 Folder: `vlms/`
+📂 Folder: `VLMs/`
 
 ---
 
@@ -98,5 +98,5 @@ This repository is for educational and non-commercial use only. Feel free to for
 ---
 
 ## 🙋‍♂️ Contact
-For queries, reach out via [GitHub Issues](https://github.com/your_username/your_repo/issues) or email at `your.email@example.com`.
+For queries, reach out via [GitHub Issues](https://github.com/Wasiq1123/Deep-Learning-Projects/issues) or email at `ahilk4525@gmail.com`.
 
