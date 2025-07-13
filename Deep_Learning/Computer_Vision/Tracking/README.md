@@ -14,8 +14,11 @@ This repository showcases various real-time object tracking implementations usin
 ```
 📁 Tracking
 ├── Multi Tracking of Objects.ipynb            # 🔥 Multi-threaded tracker on 2+ video streams
+
 ├── Yolov8 tracking.ipynb                      # YOLOv8 video tracking (with flip & resize)
+
 ├── SORTTracker and YOLO11.py                  # Webcam-based real-time tracking using SORT
+
 ├── .gitkeep
 ```
 
