@@ -91,6 +91,3 @@ If you're using Google Colab:
 * [Hugging Face ViT](https://huggingface.co/google/vit-base-patch16-224)
 
 ---
-
-Let me know if you want to include screenshots, demo results, or GitHub badge icons.
-
